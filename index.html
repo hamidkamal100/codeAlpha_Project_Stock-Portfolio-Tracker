@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Portfolio Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Stock Portfolio Tracker</h1>
+        <nav>
+            <ul>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#add-stock">Add Stock</a></li>
+                <li><a href="#remove-stock">Remove Stock</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="portfolio">
+        <h2>My Portfolio</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Stock Symbol</th>
+                    <th>Shares</th>
+                    <th>Price</th>
+                    <th>Value</th>
+                </tr>
+            </thead>
+            <tbody id="portfolioTable">
+                <!-- Stocks will be added here dynamically -->
+            </tbody>
+        </table>
+    </section>
+    
+    <section id="add-stock">
+        <h2>Add Stock</h2>
+        <form id="addStockForm">
+            <label for="symbol">Stock Symbol:</label>
+            <input type="text" id="symbol" required>
+            
+            <label for="shares">Shares:</label>
+            <input type="number" id="shares" required>
+            
+            <button type="submit">Add</button>
+        </form>
+    </section>
+    
+    <section id="remove-stock">
+        <h2>Remove Stock</h2>
+        <form id="removeStockForm">
+            <label for="removeSymbol">Stock Symbol:</label>
+            <input type="text" id="removeSymbol" required>
+            
+            <button type="submit">Remove</button>
+        </form>
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>
